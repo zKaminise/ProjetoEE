@@ -1,0 +1,241 @@
+/*! LEMBRANDO QUE CADA TAG SERA EXPLICADA EM DETALHES SUA FUNCIONALIDADE
+/*! POREM E RECOMENDADO QUE QUEM TIVER INTERESSE DE SABER COM MAIS DETALHES
+/*! PESQUISAR A FUNDO NO SITE DO MDN */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Header - Navegacao*/
+
+header {
+  background-color: antiquewhite;
+  height: 80px;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header #navbar .nav-nome {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+}
+
+header #navbar .nav-lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-lista .nav-item a {
+  text-decoration: none;
+  color: #444;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header #navbar .nav-lista .nav-item a:hover {
+  color: #888;
+  transition: color 0.3s;
+}
+
+/**Finalizado o Header*/
+
+/**Iniciando Main*/
+
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+main #banner .banner-conteudo .banner-conteudo-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+.typing {
+  color: red;
+}
+
+main #banner .banner-conteudo .banner-conteudo-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-height: 500px;
+  margin-bottom: 40px;
+}
+
+main #banner .banner-image {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 920px){
+  main #banner{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  main #banner .banner-content{
+    text-align: center;
+  }
+}
+
+/**Finalizado Conteudo Sobre o Projeto*/
+
+/**Iniciando Posts sobre curriculo*/
+
+section .posts {
+  margin-top: 71px;
+  background-color: antiquewhite;
+}
+
+.posts .posts-conteudo {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.posts .posts-conteudo .posts-conteudo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.posts .posts-conteudo .posts-conteudo-header .section-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.posts .posts-conteudo .posts-conteudo-header .view-all {
+  text-decoration: none;
+  color: blue;
+}
+
+.posts .posts-conteudo .posts-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.posts .posts-conteudo .posts-cards .post-card {
+  background-color: antiquewhite;
+  padding: 24px;
+}
+
+.posts .posts-conteudo .posts-cards .post-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.posts .posts-conteudo .posts-cards .post-card span {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 740px){
+  #posts .posts-content .posts-cards{
+    flex-direction: column;
+  }
+}
+
+/** Finalizando os Posts do Curriculo*/
+
+/** Iniciando Footer*/
+
+.footer {
+  background-color: black;
+  margin-top: 25px;
+}
+
+.footer .footer-conteudo {
+  max-width: 1200px;
+  padding: 40px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer .footer-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #fff;
+}
+
+.footer .footer-conteudo .footer-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer-conteudo .footer-contato li {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #fff;
+  margin: 10px 10px 30px 10px;
+}
+
+.footer .footer-conteudo .footer-contato a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer .footer-conteudo .footer-contato a:hover {
+  color: antiquewhite;
+}
+
+.footer .footer-conteudo .footer-contato img {
+  width: 35px;
+  color: #fff;
+}
+
+.footer .footer-conteudo .footer-copyright {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
